@@ -67,6 +67,10 @@ bottoneGenera.addEventListener('click', function (){
 
     //COSTO
     document.getElementById('costo').innerHTML = costo;
+
+    var biglietto = document.getElementById('biglietto');
+
+    biglietto.className = 'show;'
 })
 
 
@@ -79,9 +83,16 @@ bottoneGenera.addEventListener('click', function (){
 
 bottoneAnnulla.addEventListener('click', function (){
 
-    document.getElementById('name').innerHTML = '';
+    document.getElementById('name').value = '';
+    document.getElementById('km').value = '';
+    document.getElementById('eta').value = '';
 
-    document.getElementById('km').innerHTML = '';
 
-   
+    document.getElementById('nome-passeggero').innerHTML = '';
+    document.getElementById('offerta').innerHTML = '';
+    document.getElementById('numero-carrozza').innerHTML = '';
+    document.getElementById('codice-cp').innerHTML = '';
+    document.getElementById('costo').innerHTML = '';
+
+    biglietto.className = 'hidden';
 })
