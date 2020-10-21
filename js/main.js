@@ -1,9 +1,3 @@
-/*Come visto insieme durante la lezione in classe creiamo un finto biglietto del treno con:
-Nome passeggero
-Fascia eta selezionata dall'utente
-Codice treno CP (numero casuale tra 90000 e 100000 escluso)
-Numero carrozza
-Prezzo calcolato*/
 
 var bottoneGenera = document.getElementById('agreebutton');
 var bottoneAnnulla = document.getElementById('cancelbutton');
@@ -68,19 +62,12 @@ bottoneGenera.addEventListener('click', function (){
     //COSTO
     document.getElementById('costo').innerHTML = costo;
 
+    //VISIBILITA SEZIONE BIGLIETTO
     var biglietto = document.getElementById('biglietto');
-
     biglietto.className = 'show;'
 })
 
-
-
-
-
-
-
-
-
+//BOTTONE ANNULLA
 bottoneAnnulla.addEventListener('click', function (){
 
     document.getElementById('name').value = '';
